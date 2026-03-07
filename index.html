@@ -1,281 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Praman Hamal | AI & ML Leadership Portfolio</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praman Hamal | AI & ML Leadership Portfolio</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f5f7fa;
-      color: #222;
-    }
+<style>
 
-    header {
-      background: #1f3c88;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
 
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-    }
+body{
+font-family:Arial, sans-serif;
+background:#f4f7f6;
+color:#222;
+line-height:1.6;
+}
 
-    header p {
-      font-size: 1.05rem;
-    }
+/* HEADER */
 
-    nav {
-      background: #163172;
-      padding: 12px;
-      text-align: center;
-    }
+header{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:50px 20px;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
+.profile-pic{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #16a085;
+margin-bottom:15px;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+header h1{
+font-size:2.2rem;
+margin-bottom:8px;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
+header p{
+color:#d0d7de;
+}
 
-    section {
-      background: white;
-      margin-bottom: 25px;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
+/* NAVIGATION */
 
-    h2 {
-      color: #1f3c88;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #e5eaf3;
-      padding-bottom: 8px;
-    }
+nav{
+background:#16a085;
+text-align:center;
+padding:12px;
+}
 
-    h3 {
-      color: #163172;
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
 
-    p {
-      margin-bottom: 14px;
-    }
+nav a:hover{
+text-decoration:underline;
+}
 
-    ul {
-      margin-left: 20px;
-      margin-bottom: 14px;
-    }
+/* MAIN CONTAINER */
 
-    li {
-      margin-bottom: 8px;
-    }
+.container{
+max-width:1000px;
+margin:30px auto;
+padding:0 20px;
+}
 
-    .timeline-item {
-      margin-bottom: 20px;
-      padding-left: 15px;
-      border-left: 4px solid #1f3c88;
-    }
+/* SECTIONS */
 
-    .reflection {
-      background: #f9fbff;
-      border-left: 5px solid #1f3c88;
-      padding: 18px;
-      border-radius: 6px;
-    }
+section{
+background:white;
+padding:25px;
+margin-bottom:25px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #1f3c88;
-      color: white;
-      margin-top: 30px;
-    }
+h2{
+color:#2c3e50;
+margin-bottom:12px;
+border-bottom:2px solid #e6eceb;
+padding-bottom:6px;
+}
 
-    .contact a {
-      color: #1f3c88;
-      text-decoration: none;
-      font-weight: bold;
-    }
+h3{
+margin-top:15px;
+margin-bottom:8px;
+color:#16a085;
+}
 
-    .contact a:hover {
-      text-decoration: underline;
-    }
+p{
+margin-bottom:12px;
+}
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
+/* TIMELINE */
 
-      nav a {
-        display: inline-block;
-        margin: 8px 10px;
-      }
-    }
-  </style>
+.timeline-item{
+border-left:4px solid #16a085;
+padding-left:15px;
+margin-bottom:18px;
+}
+
+/* REFLECTION */
+
+.reflection{
+background:#f0faf8;
+border-left:5px solid #16a085;
+padding:18px;
+border-radius:6px;
+}
+
+/* CONTACT */
+
+.contact a{
+color:#16a085;
+font-weight:bold;
+text-decoration:none;
+}
+
+.contact a:hover{
+text-decoration:underline;
+}
+
+/* FOOTER */
+
+footer{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:18px;
+margin-top:30px;
+}
+
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Praman Hamal</h1>
-    <p>AI & Machine Learning Leadership Portfolio</p>
-  </header>
+<header>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#artifact1">Artifact 1</a>
-    <a href="#reflection">Reflection</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<img src="profile.jpg" class="profile-pic" alt="Profile Photo">
 
-  <div class="container">
+<h1>Praman Hamal</h1>
+<p>AI & Machine Learning Leadership Portfolio</p>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Welcome to my professional portfolio. I am an emerging technology leader with an interest in
-        Artificial Intelligence, Machine Learning, innovation, and responsible technology leadership.
-        This portfolio highlights my learning, growth, and professional development in AI and ML.
-      </p>
-      <p>
-        My goal is to build solutions that combine technical excellence, strategic thinking, and ethical
-        decision-making. Through this portfolio, I aim to present my skills, knowledge, and reflections
-        in a clear and professional format for academic and professional audiences.
-      </p>
-    </section>
+</header>
 
-    <section id="artifact1">
-      <h2>Artifact 1: Evolution of Artificial Intelligence and Machine Learning</h2>
+<nav>
+<a href="#about">About Me</a>
+<a href="#artifact">Artifact</a>
+<a href="#reflection">Reflection</a>
+<a href="#contact">Contact</a>
+</nav>
 
-      <p>
-        This artifact presents a concise timeline of major milestones in the development of Artificial
-        Intelligence and Machine Learning. Understanding the history of AI is important for technology
-        leaders because it provides context for modern innovation and helps identify future opportunities
-        and challenges.
-      </p>
+<div class="container">
 
-      <h3>AI & ML Timeline</h3>
+<section id="about">
 
-      <div class="timeline-item">
-        <h3>1956 – Birth of Artificial Intelligence</h3>
-        <p>
-          The term <strong>Artificial Intelligence</strong> was officially introduced at the Dartmouth
-          Conference. This event is widely recognized as the formal beginning of AI as an academic field.
-        </p>
-      </div>
+<h2>About Me</h2>
 
-      <div class="timeline-item">
-        <h3>1980s – Rise of Expert Systems</h3>
-        <p>
-          Expert systems became one of the first major commercial applications of AI. These systems used
-          rules and knowledge bases to support decision-making in industries such as healthcare, finance,
-          and engineering.
-        </p>
-      </div>
+<p>
+Welcome to my professional portfolio. I am passionate about Artificial Intelligence,
+Machine Learning, and responsible technology leadership. This portfolio highlights
+my learning, growth, and professional development as I explore the evolving landscape
+of AI and emerging technologies.
+</p>
 
-      <div class="timeline-item">
-        <h3>1997 – IBM Deep Blue Defeats Garry Kasparov</h3>
-        <p>
-          IBM’s Deep Blue defeated the reigning world chess champion, proving that machines could outperform
-          humans in complex strategic tasks under specific conditions.
-        </p>
-      </div>
+<p>
+My goal is to combine technical expertise with strategic thinking to create meaningful
+solutions that solve real-world problems while maintaining ethical responsibility
+and innovation.
+</p>
 
-      <div class="timeline-item">
-        <h3>2012 – Deep Learning Breakthrough</h3>
-        <p>
-          Advances in deep neural networks led to major improvements in image recognition and pattern
-          detection. This milestone accelerated progress in computer vision, speech recognition, and
-          natural language processing.
-        </p>
-      </div>
+</section>
 
-      <div class="timeline-item">
-        <h3>2017 – Transformer Architecture</h3>
-        <p>
-          The introduction of the Transformer model revolutionized natural language processing by improving
-          how machines understand context and relationships in language. This innovation laid the foundation
-          for today’s large language models.
-        </p>
-      </div>
+<section id="artifact">
 
-      <div class="timeline-item">
-        <h3>2020–Present – Generative AI Revolution</h3>
-        <p>
-          Generative AI has rapidly transformed industries by enabling machines to create text, images, code,
-          and other content. This period represents a major shift in how organizations use AI to improve
-          productivity, creativity, and decision-making.
-        </p>
-      </div>
+<h2>Artifact 1 — Evolution of Artificial Intelligence and Machine Learning</h2>
 
-      <h3>Why This Matters</h3>
-      <p>
-        Understanding the evolution of AI and ML is valuable because it helps professionals recognize how
-        current technologies were developed, how innovation cycles occur, and how leaders can responsibly
-        guide future advancements.
-      </p>
+<p>
+This artifact presents a timeline of major milestones that shaped the development
+of Artificial Intelligence and Machine Learning. Understanding the history of AI
+helps technology leaders better understand modern systems and future innovations.
+</p>
 
-      <ul>
-        <li>It demonstrates awareness of major AI milestones.</li>
-        <li>It shows the ability to organize technical information clearly.</li>
-        <li>It reflects an understanding of AI’s strategic and professional significance.</li>
-        <li>It supports audience-focused communication for both academic and professional settings.</li>
-      </ul>
-    </section>
+<h3>AI & ML Timeline</h3>
 
-    <section id="reflection">
-      <h2>Reflection</h2>
-      <div class="reflection">
-        <p>
-          Creating my first portfolio artifact helped me better understand the importance of presenting
-          technical knowledge in a way that is both clear and meaningful to a specific audience. By developing
-          an AI and Machine Learning timeline, I was able to connect historical milestones with the modern
-          applications of AI that shape industries today.
-        </p>
-        <p>
-          This process strengthened my ability to identify what is professionally valuable and how to organize
-          information in a polished and structured format. It also helped me begin defining my professional
-          identity as someone interested in AI leadership, innovation, and responsible use of technology.
-        </p>
-        <p>
-          Moving forward, I plan to expand this portfolio with additional artifacts such as AI lab experiences,
-          leadership reflections, and applied projects that demonstrate both technical and strategic skills.
-        </p>
-      </div>
-    </section>
+<div class="timeline-item">
+<h3>1956 — Birth of Artificial Intelligence</h3>
+<p>
+The Dartmouth Conference formally introduced the term Artificial Intelligence,
+marking the beginning of AI as a scientific research field.
+</p>
+</div>
 
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
-      <p>LinkedIn: <a href="#" target="_blank">Add your LinkedIn profile here</a></p>
-      <p>GitHub: <a href="#" target="_blank">Add your GitHub profile here</a></p>
-    </section>
+<div class="timeline-item">
+<h3>1980s — Expert Systems</h3>
+<p>
+Expert systems became early AI applications that used rule-based logic to assist
+with decision-making in industries such as healthcare and finance.
+</p>
+</div>
 
-  </div>
+<div class="timeline-item">
+<h3>1997 — Deep Blue Defeats World Chess Champion</h3>
+<p>
+IBM's Deep Blue defeated Garry Kasparov, demonstrating the ability of machines
+to outperform humans in complex strategic games.
+</p>
+</div>
 
-  <footer>
-    <p>&copy; 2026 Praman Hamal | AI & ML Leadership Portfolio</p>
-  </footer>
+<div class="timeline-item">
+<h3>2012 — Deep Learning Breakthrough</h3>
+<p>
+Neural networks achieved major improvements in image recognition and pattern
+detection, leading to rapid progress in computer vision and speech recognition.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>2017 — Transformer Architecture</h3>
+<p>
+Transformers changed natural language processing and enabled the development
+of modern large language models used today.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>2020–Present — Generative AI Era</h3>
+<p>
+Generative AI systems can create text, images, code, and other content, transforming
+industries and accelerating innovation worldwide.
+</p>
+</div>
+
+</section>
+
+<section id="reflection">
+
+<h2>Reflection</h2>
+
+<div class="reflection">
+
+<p>
+Creating my first portfolio artifact helped me better understand how to present
+technical information clearly and professionally to a specific audience. By
+developing an AI and Machine Learning timeline, I was able to connect important
+historical developments with modern technological innovation.
+</p>
+
+<p>
+This activity strengthened my ability to communicate complex ideas in a structured
+format while also reflecting on my professional growth. It helped me begin building
+a professional identity focused on AI leadership, innovation, and responsible
+technology development.
+</p>
+
+<p>
+Moving forward, I plan to expand this portfolio with additional artifacts such
+as AI lab experiences, real-world applications, and leadership reflections that
+demonstrate both technical and strategic thinking.
+</p>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Email: praman.hamal@gmail.com</p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/praman-hamal/">Praman Hamal</a></p>
+<p>GitHub: <a href="https://github.com/pramanhamal">Praman Hamal</a></p>
+
+</section>
+
+</div>
+
+<footer>
+© 2026 Praman Hamal | AI & ML Leadership Portfolio
+</footer>
 
 </body>
 </html>
