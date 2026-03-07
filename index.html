@@ -2,136 +2,280 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Praman | AI & ML Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praman Hamal | AI & ML Leadership Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f7fa;
-      color: #333;
+      line-height: 1.6;
+      background-color: #f5f7fa;
+      color: #222;
     }
+
     header {
-      background: linear-gradient(135deg, #1e293b, #0f172a);
+      background: #1f3c88;
       color: white;
-      padding: 60px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
-    section {
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.05rem;
+    }
+
+    nav {
+      background: #163172;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
       max-width: 1000px;
-      margin: auto;
-      padding: 50px 20px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
-    h2 { color: #0f172a; }
-    .card {
+
+    section {
       background: white;
+      margin-bottom: 25px;
       padding: 25px;
-      margin-bottom: 30px;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
-    ul { padding-left: 20px; }
+
+    h2 {
+      color: #1f3c88;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #e5eaf3;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #163172;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 14px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .timeline-item {
+      margin-bottom: 20px;
+      padding-left: 15px;
+      border-left: 4px solid #1f3c88;
+    }
+
+    .reflection {
+      background: #f9fbff;
+      border-left: 5px solid #1f3c88;
+      padding: 18px;
+      border-radius: 6px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
-      background: #0f172a;
+      background: #1f3c88;
       color: white;
+      margin-top: 30px;
     }
-    a { color: #2563eb; text-decoration: none; }
+
+    .contact a {
+      color: #1f3c88;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px 10px;
+      }
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="profile.jpg" alt="Praman Profile Photo" style="width:160px;height:160px;border-radius:50%;border:4px solid white;object-fit:cover;margin-bottom:20px;" />
-  <h1>Praman Hamal</h1>
-  <p>AI & Machine Learning | Full‑Stack Development | Applied Data Science</p>
-</header>
+  <header>
+    <h1>Praman Hamal</h1>
+    <p>AI & Machine Learning Leadership Portfolio</p>
+  </header>
 
-<section>
-  <h2>Professional Bio</h2>
-  <div class="card">
-    <p>I am a software engineer and graduate AI/ML student passionate about building intelligent systems that solve real‑world problems. My experience includes machine learning validation, data preprocessing, full‑stack development, and AI‑driven simulations. I focus on ethical AI, continuous learning, and applied machine intelligence in business and research environments.</p>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#artifact1">Artifact 1</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Welcome to my professional portfolio. I am an emerging technology leader with an interest in
+        Artificial Intelligence, Machine Learning, innovation, and responsible technology leadership.
+        This portfolio highlights my learning, growth, and professional development in AI and ML.
+      </p>
+      <p>
+        My goal is to build solutions that combine technical excellence, strategic thinking, and ethical
+        decision-making. Through this portfolio, I aim to present my skills, knowledge, and reflections
+        in a clear and professional format for academic and professional audiences.
+      </p>
+    </section>
+
+    <section id="artifact1">
+      <h2>Artifact 1: Evolution of Artificial Intelligence and Machine Learning</h2>
+
+      <p>
+        This artifact presents a concise timeline of major milestones in the development of Artificial
+        Intelligence and Machine Learning. Understanding the history of AI is important for technology
+        leaders because it provides context for modern innovation and helps identify future opportunities
+        and challenges.
+      </p>
+
+      <h3>AI & ML Timeline</h3>
+
+      <div class="timeline-item">
+        <h3>1956 – Birth of Artificial Intelligence</h3>
+        <p>
+          The term <strong>Artificial Intelligence</strong> was officially introduced at the Dartmouth
+          Conference. This event is widely recognized as the formal beginning of AI as an academic field.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>1980s – Rise of Expert Systems</h3>
+        <p>
+          Expert systems became one of the first major commercial applications of AI. These systems used
+          rules and knowledge bases to support decision-making in industries such as healthcare, finance,
+          and engineering.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>1997 – IBM Deep Blue Defeats Garry Kasparov</h3>
+        <p>
+          IBM’s Deep Blue defeated the reigning world chess champion, proving that machines could outperform
+          humans in complex strategic tasks under specific conditions.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>2012 – Deep Learning Breakthrough</h3>
+        <p>
+          Advances in deep neural networks led to major improvements in image recognition and pattern
+          detection. This milestone accelerated progress in computer vision, speech recognition, and
+          natural language processing.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>2017 – Transformer Architecture</h3>
+        <p>
+          The introduction of the Transformer model revolutionized natural language processing by improving
+          how machines understand context and relationships in language. This innovation laid the foundation
+          for today’s large language models.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>2020–Present – Generative AI Revolution</h3>
+        <p>
+          Generative AI has rapidly transformed industries by enabling machines to create text, images, code,
+          and other content. This period represents a major shift in how organizations use AI to improve
+          productivity, creativity, and decision-making.
+        </p>
+      </div>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Understanding the evolution of AI and ML is valuable because it helps professionals recognize how
+        current technologies were developed, how innovation cycles occur, and how leaders can responsibly
+        guide future advancements.
+      </p>
+
+      <ul>
+        <li>It demonstrates awareness of major AI milestones.</li>
+        <li>It shows the ability to organize technical information clearly.</li>
+        <li>It reflects an understanding of AI’s strategic and professional significance.</li>
+        <li>It supports audience-focused communication for both academic and professional settings.</li>
+      </ul>
+    </section>
+
+    <section id="reflection">
+      <h2>Reflection</h2>
+      <div class="reflection">
+        <p>
+          Creating my first portfolio artifact helped me better understand the importance of presenting
+          technical knowledge in a way that is both clear and meaningful to a specific audience. By developing
+          an AI and Machine Learning timeline, I was able to connect historical milestones with the modern
+          applications of AI that shape industries today.
+        </p>
+        <p>
+          This process strengthened my ability to identify what is professionally valuable and how to organize
+          information in a polished and structured format. It also helped me begin defining my professional
+          identity as someone interested in AI leadership, innovation, and responsible use of technology.
+        </p>
+        <p>
+          Moving forward, I plan to expand this portfolio with additional artifacts such as AI lab experiences,
+          leadership reflections, and applied projects that demonstrate both technical and strategic skills.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+      <p>LinkedIn: <a href="#" target="_blank">Add your LinkedIn profile here</a></p>
+      <p>GitHub: <a href="#" target="_blank">Add your GitHub profile here</a></p>
+    </section>
+
   </div>
-</section>
 
-<section>
-  <h2>Personal Value Proposition</h2>
-  <div class="card">
-    <p>I bring a rare combination of engineering execution, machine‑learning analysis, and leadership‑driven problem solving. I do not just build models—I validate, monitor, and deploy them responsibly for real‑world impact.</p>
-  </div>
-</section>
-
-<section>
-  <h2>Target Audience</h2>
-  <div class="card">
-    <p>This portfolio is designed for recruiters, hiring managers, and graduate faculty evaluating applied AI/ML skills, software engineering capability, and ethical machine‑learning practice.</p>
-  </div>
-</section>
-
-<section>
-  <h2>Artifact 1 – AI‑Based Roulette Strategy Simulator</h2>
-  <div class="card">
-    <p><strong>Introduction:</strong> A predictive simulation system evaluating gambling strategies using probability modeling.</p>
-    <p><strong>Description:</strong> Simulates roulette spins and analyzes betting behavior using statistical and ML methods.</p>
-    <p><strong>Objective:</strong> Predict risk patterns and quantify loss exposure.</p>
-    <p><strong>Process:</strong> Data generation → Feature engineering → Model training → Validation → Evaluation.</p>
-    <p><strong>Tools & Tech:</strong> Python, Pandas, Scikit‑Learn.</p>
-    <p><strong>Value Proposition:</strong> Demonstrates predictive risk modeling under uncertainty.</p>
-    <p><strong>Unique Value:</strong> Combines finance, probability, and machine learning.</p>
-    <p><strong>Relevance:</strong> Risk analytics, fintech, behavioral AI.</p>
-    <p><strong>References:</strong> Scikit‑Learn Documentation.</p>
-  </div>
-</section>
-
-<section>
-  <h2>Artifact 2 – Model Validation & Ethical Monitoring</h2>
-  <div class="card">
-    <p><strong>Introduction:</strong> Lifecycle validation framework for deployed ML models.</p>
-    <p><strong>Description:</strong> Covers bias detection, retraining triggers, and drift monitoring.</p>
-    <p><strong>Objective:</strong> Maintain long‑term model reliability.</p>
-    <p><strong>Process:</strong> Evaluation → Monitoring → Retraining → Bias audits.</p>
-    <p><strong>Tools & Tech:</strong> Python, dashboards, F1‑score tracking.</p>
-    <p><strong>Value Proposition:</strong> Ensures trustworthy AI beyond deployment.</p>
-    <p><strong>Unique Value:</strong> Operational ML governance.</p>
-    <p><strong>Relevance:</strong> Enterprise AI systems.</p>
-    <p><strong>References:</strong> ML Monitoring Research Papers.</p>
-  </div>
-</section>
-
-<section>
-  <h2>Artifact 3 – Iterative AI Leadership Model</h2>
-  <div class="card">
-    <p><strong>Introduction:</strong> Leadership framework inspired by iterative ML development.</p>
-    <p><strong>Description:</strong> Applies experiment‑feedback loops to organizational change.</p>
-    <p><strong>Objective:</strong> Improve AI adoption success.</p>
-    <p><strong>Process:</strong> Strategy → Pilot → Feedback → Optimization.</p>
-    <p><strong>Tools & Tech:</strong> Agile, OKRs, AI governance.</p>
-    <p><strong>Value Proposition:</strong> Bridges human leadership and machine learning iteration.</p>
-    <p><strong>Unique Value:</strong> AI + organizational transformation alignment.</p>
-    <p><strong>Relevance:</strong> Enterprise AI leadership roles.</p>
-    <p><strong>References:</strong> AI Leadership Publications.</p>
-  </div>
-</section>
-
-<section>
-  <h2>Artifact 4 – Portfolio AI Chatbot Assistant</h2>
-  <div class="card">
-    <p><strong>Introduction:</strong> AI chatbot for portfolio and client engagement.</p>
-    <p><strong>Description:</strong> NLP assistant answering portfolio questions.</p>
-    <p><strong>Objective:</strong> Improve user interaction and accessibility.</p>
-    <p><strong>Process:</strong> Prompt design → API integration → UI deployment.</p>
-    <p><strong>Tools & Tech:</strong> OpenAI API, JavaScript, HTML.</p>
-    <p><strong>Value Proposition:</strong> Demonstrates applied generative AI.</p>
-    <p><strong>Unique Value:</strong> AI‑powered portfolio automation.</p>
-    <p><strong>Relevance:</strong> Web AI applications.</p>
-    <p><strong>References:</strong> OpenAI Documentation.</p>
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 Praman Hamal | AI & Machine Learning Portfolio</p>
-</footer>
+  <footer>
+    <p>&copy; 2026 Praman Hamal | AI & ML Leadership Portfolio</p>
+  </footer>
 
 </body>
 </html>
