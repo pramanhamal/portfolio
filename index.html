@@ -1,124 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Praman Hamal | AI & ML Leadership Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praman Hamal | AI & ML Leadership Portfolio</title>
 
-<style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
 
-body{
-  font-family:Arial, sans-serif;
-  background:#f4f7f6;
-  color:#222;
-  line-height:1.6;
-}
+    html{
+      scroll-behavior:smooth;
+    }
 
-header{
-  background:#2c3e50;
-  color:white;
-  text-align:center;
-  padding:50px 20px;
-}
+    body{
+      font-family:Arial, sans-serif;
+      background:#f4f7f6;
+      color:#222;
+      line-height:1.6;
+    }
 
-.profile-pic{
-  width:150px;
-  height:150px;
-  border-radius:50%;
-  object-fit:cover;
-  border:5px solid #16a085;
-  margin-bottom:15px;
-}
+    header{
+      background:#2c3e50;
+      color:white;
+      text-align:center;
+      padding:50px 20px;
+    }
 
-header h1{
-  font-size:2.2rem;
-  margin-bottom:8px;
-}
+    .profile-pic{
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid #16a085;
+      margin-bottom:15px;
+    }
 
-header p{
-  color:#d0d7de;
-}
+    header h1{
+      font-size:2.2rem;
+      margin-bottom:8px;
+    }
 
-nav{
-  background:#16a085;
-  text-align:center;
-  padding:12px;
-}
+    header p{
+      color:#d0d7de;
+    }
 
-nav a{
-  color:white;
-  text-decoration:none;
-  margin:0 15px;
-  font-weight:bold;
-}
+    nav{
+      background:#16a085;
+      text-align:center;
+      padding:12px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
 
-nav a:hover{
-  text-decoration:underline;
-}
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 12px;
+      font-weight:bold;
+      display:inline-block;
+      padding:4px 0;
+    }
 
-.container{
-  max-width:1000px;
-  margin:30px auto;
-  padding:0 20px;
-}
+    nav a:hover{
+      text-decoration:underline;
+    }
 
-section{
-  background:white;
-  padding:25px;
-  margin-bottom:25px;
-  border-radius:10px;
-  box-shadow:0 3px 8px rgba(0,0,0,0.08);
-}
+    .container{
+      max-width:1050px;
+      margin:30px auto;
+      padding:0 20px;
+    }
 
-h2{
-  color:#2c3e50;
-  margin-bottom:12px;
-  border-bottom:2px solid #e6eceb;
-  padding-bottom:6px;
-}
+    section{
+      background:white;
+      padding:25px;
+      margin-bottom:25px;
+      border-radius:10px;
+      box-shadow:0 3px 8px rgba(0,0,0,0.08);
+    }
 
-h3{
-  margin-top:15px;
-  margin-bottom:8px;
-  color:#16a085;
-}
+    h2{
+      color:#2c3e50;
+      margin-bottom:12px;
+      border-bottom:2px solid #e6eceb;
+      padding-bottom:6px;
+    }
 
-p{
-  margin-bottom:12px;
-}
+    h3{
+      margin-top:15px;
+      margin-bottom:8px;
+      color:#16a085;
+    }
 
-.timeline-item{
-  border-left:4px solid #16a085;
-  padding-left:15px;
-  margin-bottom:18px;
-}
+    p{
+      margin-bottom:12px;
+    }
 
-.reflection{
-  background:#f0faf8;
-  border-left:5px solid #16a085;
-  padding:18px;
-  border-radius:6px;
-}
+    ul{
+      margin-left:20px;
+      margin-bottom:12px;
+    }
 
-.contact a{
-  color:#16a085;
-  font-weight:bold;
-  text-decoration:none;
-}
+    li{
+      margin-bottom:6px;
+    }
 
-footer{
-  background:#2c3e50;
-  color:white;
-  text-align:center;
-  padding:18px;
-  margin-top:30px;
-}
-</style>
+    .timeline-item{
+      border-left:4px solid #16a085;
+      padding-left:15px;
+      margin-bottom:18px;
+    }
+
+    .reflection{
+      background:#f0faf8;
+      border-left:5px solid #16a085;
+      padding:18px;
+      border-radius:6px;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+    }
+
+    .badge-list{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:8px;
+      margin-bottom:12px;
+    }
+
+    .badge{
+      background:#e8f7f3;
+      color:#116d5b;
+      border:1px solid #cfece4;
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:0.95rem;
+      font-weight:bold;
+    }
+
+    .artifact-summary{
+      background:#f9fbfb;
+      border:1px solid #e5eeee;
+      border-radius:8px;
+      padding:14px;
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+
+    .contact a{
+      color:#16a085;
+      font-weight:bold;
+      text-decoration:none;
+    }
+
+    .contact a:hover{
+      text-decoration:underline;
+    }
+
+    footer{
+      background:#2c3e50;
+      color:white;
+      text-align:center;
+      padding:18px;
+      margin-top:30px;
+    }
+
+    @media (max-width: 768px){
+      .two-col{
+        grid-template-columns:1fr;
+      }
+
+      nav a{
+        margin:6px 8px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -131,10 +196,12 @@ footer{
 
 <nav>
   <a href="#about">About Me</a>
+  <a href="#expertise">Expertise</a>
   <a href="#artifact1">Artifact 1</a>
   <a href="#artifact2">Artifact 2</a>
   <a href="#artifact3">Artifact 3</a>
   <a href="#artifact4">Artifact 4</a>
+  <a href="#artifact5">Artifact 5</a>
   <a href="#reflection">Reflection</a>
   <a href="#contact">Contact</a>
 </nav>
@@ -144,15 +211,20 @@ footer{
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am passionate about Artificial Intelligence, Machine Learning, and responsible technology leadership. This portfolio highlights my growth as I apply AI/ML concepts to real-world scenarios and develop both technical and leadership skills.
+      I am a software engineer and AI/ML graduate student with a strong interest in responsible technology leadership, applied machine learning, and real-world problem solving. This portfolio highlights my growth across technical knowledge, communication, ethical reasoning, and leadership in artificial intelligence and machine learning.
     </p>
     <p>
-      My goal is to combine technical expertise with strategic thinking to create meaningful, scalable, and ethical solutions.
+      My goal is to combine technical expertise with strategic thinking to build scalable, ethical, and practical AI-driven solutions that support better decision-making and long-term organizational value.
     </p>
 
     <h3>Professional Bio</h3>
     <p>
-      I am a technology professional with a strong interest in AI, machine learning, and leadership in emerging technologies. My background includes software engineering, problem-solving, and applying technical concepts to practical challenges. Through this portfolio, I demonstrate how I have developed both technical knowledge and leadership awareness in AI/ML, including communication, ethical reasoning, and strategic thinking.
+      My background includes software engineering, application development, problem-solving, and the use of AI/ML concepts in academic and practical settings. Through this portfolio, I show how I translate coursework and technical learning into leadership thinking by focusing not only on machine learning concepts and tools, but also on communication, ethics, adaptability, and business relevance.
+    </p>
+
+    <h3>Professional Impact</h3>
+    <p>
+      I bring a blend of technical execution and leadership perspective. My work emphasizes structured problem-solving, continuous improvement, responsible AI thinking, and the ability to communicate complex ideas clearly to different audiences. I aim to contribute as a professional who can bridge technical systems and strategic outcomes.
     </p>
 
     <h3>Personal Value Proposition</h3>
@@ -162,13 +234,64 @@ footer{
 
     <h3>Target Audience</h3>
     <p>
-      This portfolio is designed for technology leaders, recruiters, instructors, and organizations interested in AI/ML-driven solutions. It demonstrates my ability to apply machine learning concepts, communicate complex ideas clearly, and lead responsibly in environments where AI is transforming decision-making processes.
+      This portfolio is designed for recruiters, instructors, technology leaders, and organizations interested in AI/ML-driven solutions. It demonstrates my ability to apply machine learning concepts, communicate complex ideas clearly, and lead responsibly in environments where AI is transforming decision-making processes.
+    </p>
+
+    <div class="badge-list">
+      <span class="badge">AI/ML Concepts</span>
+      <span class="badge">Responsible AI</span>
+      <span class="badge">Leadership Thinking</span>
+      <span class="badge">Technical Communication</span>
+      <span class="badge">Problem Solving</span>
+      <span class="badge">Software Engineering</span>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <h2>Areas of Expertise</h2>
+
+    <div class="two-col">
+      <div>
+        <h3>Technical Strengths</h3>
+        <ul>
+          <li>Artificial Intelligence fundamentals</li>
+          <li>Machine Learning concepts and model evaluation</li>
+          <li>Neural networks and iterative learning</li>
+          <li>Ethical AI and bias awareness</li>
+          <li>Structured problem-solving and analysis</li>
+          <li>Software engineering and web development</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Leadership Strengths</h3>
+        <ul>
+          <li>Ethical reasoning in AI/ML decisions</li>
+          <li>Audience-focused communication</li>
+          <li>Continuous improvement mindset</li>
+          <li>Critical reflection and adaptability</li>
+          <li>Connecting technical systems to business value</li>
+          <li>Responsible innovation and stakeholder awareness</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Tools and Technologies</h3>
+    <p>
+      HTML, CSS, JavaScript, GitHub, AI-assisted drafting tools, digital portfolio design tools, research resources, and course platforms.
+    </p>
+
+    <h3>Professional Approach</h3>
+    <p>
+      I approach AI/ML as both a technical and leadership discipline. My work emphasizes clarity, practical application, responsible innovation, and continuous improvement. I believe effective AI leadership requires not only understanding how systems work, but also understanding how those systems affect people, teams, and organizations.
     </p>
   </section>
 
-  <!-- ARTIFACT 1 -->
   <section id="artifact1">
     <h2>Artifact 1 — Evolution of AI & Machine Learning</h2>
+
+    <h3>Artifact Title</h3>
+    <p>Evolution of AI & Machine Learning</p>
 
     <h3>Introduction</h3>
     <p>
@@ -182,57 +305,61 @@ footer{
 
     <h3>Objective</h3>
     <p>
-      To understand the progression of AI technologies and how past innovations influence current machine learning systems.
+      To understand the progression of AI technologies and how past innovations influence current machine learning systems and leadership decisions.
     </p>
 
     <h3>Process</h3>
     <p>
-      I researched key milestones in AI history and organized them into a structured timeline to demonstrate technological growth and impact.
+      I researched major milestones in AI history, identified the most influential developments, and organized them into a structured timeline. This process helped me analyze not only what changed over time, but why those changes matter in today's AI landscape.
     </p>
 
     <h3>Tools and Tech Used</h3>
     <p>
-      Research materials, structured analysis, timeline organization, and digital presentation techniques.
+      Research materials, structured analysis, digital writing tools, and timeline organization techniques.
     </p>
 
     <h3>Key Milestones</h3>
     <div class="timeline-item">
-      <h3>1956 — AI Birth</h3>
+      <h3>1956 — Birth of AI</h3>
       <p>Dartmouth Conference introduced AI as a formal academic field.</p>
     </div>
 
     <div class="timeline-item">
       <h3>1997 — Deep Blue</h3>
-      <p>IBM’s Deep Blue defeated the world chess champion, showing AI’s potential in strategic decision-making.</p>
+      <p>IBM’s Deep Blue defeated the world chess champion, proving the power of machine-based strategic decision-making.</p>
     </div>
 
     <div class="timeline-item">
       <h3>2012 — Deep Learning Breakthrough</h3>
-      <p>Advances in deep learning transformed image recognition and accelerated modern machine learning research.</p>
+      <p>Advances in deep learning transformed image recognition and accelerated modern machine learning applications.</p>
     </div>
 
     <div class="timeline-item">
       <h3>2020–Present — Generative AI</h3>
-      <p>AI systems now create text, images, code, and other content, changing how individuals and organizations work.</p>
+      <p>AI systems now generate text, images, code, and other content, changing how people work, learn, and create.</p>
     </div>
 
-    <h3>Value Proposition of the Artifact</h3>
-    <p>
-      <strong>Unique Value:</strong> This artifact demonstrates my foundational understanding of the evolution of AI and how key milestones continue to influence current systems and leadership decisions.
-    </p>
-    <p>
-      <strong>Relevance:</strong> Understanding the history of AI is essential for evaluating current innovations responsibly and making informed decisions about future AI adoption.
-    </p>
+    <div class="artifact-summary">
+      <h3>Value Proposition of the Artifact</h3>
+      <p>
+        <strong>Unique Value:</strong> This artifact demonstrates my foundational understanding of the evolution of AI and how historical milestones continue to influence present-day systems.
+      </p>
+      <p>
+        <strong>Relevance:</strong> Understanding where AI came from is essential for evaluating where it is going and for making responsible decisions about adoption, implementation, and leadership.
+      </p>
+    </div>
 
     <h3>References</h3>
     <p>
-      Course materials and historical AI sources.
+      Course materials and historical AI research sources.
     </p>
   </section>
 
-  <!-- ARTIFACT 2 -->
   <section id="artifact2">
     <h2>Artifact 2 — Machine Learning Training Methods</h2>
+
+    <h3>Artifact Title</h3>
+    <p>Machine Learning Training Methods</p>
 
     <h3>Introduction</h3>
     <p>
@@ -241,41 +368,45 @@ footer{
 
     <h3>Description</h3>
     <p>
-      It focuses on machine learning training methods and shows how technical ideas can be understood and applied through explanation, reflection, and practical examples.
+      It focuses on training methods in machine learning and shows how technical ideas can be understood and applied through explanation, reflection, and practical use cases.
     </p>
 
     <h3>Objective</h3>
     <p>
-      Apply ML training concepts using reasoning instead of memorization.
+      To apply machine learning training concepts using reasoning instead of memorization and to connect theoretical understanding with practical decision-making.
     </p>
 
     <h3>Process</h3>
     <p>
-      I interacted with an AI chatbot, reviewed course materials, and applied machine learning concepts to realistic scenarios. This process allowed me to move beyond memorization and toward applied understanding.
+      I reviewed course materials, engaged with AI-assisted learning tools, and used realistic scenarios to analyze supervised learning, training behavior, and model improvement. This helped me move beyond memorizing terms and toward understanding how training methods affect outcomes.
     </p>
 
     <h3>Tools and Tech Used</h3>
     <p>
-      AI chatbot, course materials, structured reasoning, and critical thinking.
+      AI chatbot, course resources, structured reasoning, concept mapping, and reflective writing.
     </p>
 
-    <h3>Value Proposition of the Artifact</h3>
-    <p>
-      <strong>Unique Value:</strong> This artifact shows my ability to interpret and apply machine learning concepts instead of simply recalling definitions.
-    </p>
-    <p>
-      <strong>Relevance:</strong> The ability to reason through ML methods is important in professional settings where leaders must make informed decisions about models, training approaches, and implementation strategies.
-    </p>
+    <div class="artifact-summary">
+      <h3>Value Proposition of the Artifact</h3>
+      <p>
+        <strong>Unique Value:</strong> This artifact shows my ability to interpret machine learning methods in a practical way instead of only recalling definitions.
+      </p>
+      <p>
+        <strong>Relevance:</strong> This matters in professional environments where leaders and practitioners must evaluate how models are trained, how results are improved, and how decisions should be made based on model behavior.
+      </p>
+    </div>
 
     <h3>References</h3>
     <p>
-      Course materials.
+      Course materials and guided AI learning interactions.
     </p>
   </section>
 
-  <!-- ARTIFACT 3 -->
   <section id="artifact3">
     <h2>Artifact 3 — Neural Networks Explanation</h2>
+
+    <h3>Artifact Title</h3>
+    <p>Neural Networks Explanation</p>
 
     <h3>Introduction</h3>
     <p>
@@ -284,41 +415,45 @@ footer{
 
     <h3>Description</h3>
     <p>
-      It explains how neural networks function by using structured language and relatable analogies, making technical concepts more accessible to broader audiences.
+      It explains how neural networks function by using structured language and relatable analogies, making technical concepts more accessible to non-technical and mixed audiences.
     </p>
 
     <h3>Objective</h3>
     <p>
-      Translate technical AI concepts into understandable language for non-technical and mixed audiences.
+      To translate technical AI concepts into understandable language while preserving accuracy and relevance.
     </p>
 
     <h3>Process</h3>
     <p>
-      I used real-world analogies and layered explanations to describe how neural networks process information, learn from examples, and improve performance over time.
+      I broke the topic into core concepts such as inputs, hidden layers, outputs, and learning through adjustment. Then I used simple analogies and structured explanations to communicate how neural networks process information and improve over time.
     </p>
 
     <h3>Tools and Tech Used</h3>
     <p>
-      Concept explanation, structured communication, audience-focused writing, and course concepts.
+      Concept explanation, audience-focused writing, course concepts, and structured communication techniques.
     </p>
 
-    <h3>Value Proposition of the Artifact</h3>
-    <p>
-      <strong>Unique Value:</strong> This artifact combines technical understanding with communication skills, showing my ability to make advanced AI ideas understandable.
-    </p>
-    <p>
-      <strong>Relevance:</strong> This is important for leadership roles where professionals must explain technical systems to decision-makers, cross-functional teams, or stakeholders.
-    </p>
+    <div class="artifact-summary">
+      <h3>Value Proposition of the Artifact</h3>
+      <p>
+        <strong>Unique Value:</strong> This artifact combines technical understanding with communication skill, showing my ability to make advanced AI topics understandable.
+      </p>
+      <p>
+        <strong>Relevance:</strong> This is important in leadership and collaborative roles where professionals must explain technical systems to stakeholders, decision-makers, or cross-functional teams.
+      </p>
+    </div>
 
     <h3>References</h3>
     <p>
-      Course materials.
+      Course materials and neural network learning resources.
     </p>
   </section>
 
-  <!-- ARTIFACT 4 -->
   <section id="artifact4">
     <h2>Artifact 4 — Bias in AI & Responsible Leadership</h2>
+
+    <h3>Artifact Title</h3>
+    <p>Bias in AI & Responsible Leadership</p>
 
     <h3>Introduction</h3>
     <p>
@@ -327,36 +462,38 @@ footer{
 
     <h3>Description</h3>
     <p>
-      It analyzes how bias enters AI systems through data selection, labeling, design, and evaluation, and it connects those risks to ethical leadership in AI/ML environments.
+      It analyzes how bias enters AI systems through data selection, labeling, algorithm design, and evaluation, and it connects those risks to ethical leadership in AI/ML environments.
     </p>
 
     <h3>Objective</h3>
     <p>
-      To analyze how bias enters AI systems and develop leadership strategies to ensure fairness, accountability, and ethical decision-making.
+      To examine how bias appears in AI systems and to develop leadership strategies that support fairness, accountability, and ethical decision-making.
     </p>
 
     <h3>Process</h3>
     <p>
-      I explored how bias occurs in data selection, labeling, algorithm design, and evaluation. I then connected these concepts to leadership responsibilities, focusing on how decisions made by teams can unintentionally introduce bias into AI systems.
+      I explored the points in the AI lifecycle where bias can be introduced, such as biased datasets, labeling choices, and flawed evaluation practices. I then connected those technical risks to leadership responsibility by considering what teams and organizations should do to reduce harm and improve fairness.
     </p>
 
     <h3>Tools and Tech Used</h3>
     <p>
-      Course materials, AI-assisted analysis, ethical reasoning, and real-world scenario evaluation.
-    </p>
-
-    <h3>Value Proposition of the Artifact</h3>
-    <p>
-      <strong>Unique Value:</strong> This artifact demonstrates my ability to think beyond technical implementation and consider ethical implications of AI systems.
-    </p>
-    <p>
-      <strong>Relevance:</strong> It shows leadership readiness by addressing fairness, inclusivity, accountability, and responsible AI development—critical skills in modern AI/ML roles.
+      Course materials, AI-assisted analysis, ethical reasoning, case-based evaluation, and reflective writing.
     </p>
 
     <h3>Evidence</h3>
     <p>
-      Bias can enter AI systems through multiple stages such as biased datasets, human labeling decisions, and flawed evaluation processes. Recognizing this allows leaders to implement safeguards such as bias audits, diverse teams, and continuous monitoring.
+      Bias can enter AI systems through multiple stages such as data collection, labeling decisions, algorithm design, and performance measurement. Recognizing these risks allows leaders to implement safeguards such as bias audits, diverse teams, stronger review processes, and continuous monitoring.
     </p>
+
+    <div class="artifact-summary">
+      <h3>Value Proposition of the Artifact</h3>
+      <p>
+        <strong>Unique Value:</strong> This artifact demonstrates my ability to think beyond technical implementation and consider the human and ethical impact of AI systems.
+      </p>
+      <p>
+        <strong>Relevance:</strong> It shows leadership readiness by addressing fairness, accountability, inclusivity, and responsible AI development—critical priorities in modern AI/ML roles.
+      </p>
+    </div>
 
     <h3>References</h3>
     <p>
@@ -364,33 +501,79 @@ footer{
     </p>
   </section>
 
-  <!-- REFLECTION -->
+  <section id="artifact5">
+    <h2>Artifact 5 — Iterative Mindset in AI/ML Leadership</h2>
+
+    <h3>Artifact Title</h3>
+    <p>Iterative Mindset in AI/ML Leadership</p>
+
+    <h3>Introduction</h3>
+    <p>
+      This artifact explores how iterative thinking supports successful leadership in artificial intelligence and machine learning environments.
+    </p>
+
+    <h3>Description</h3>
+    <p>
+      It focuses on the importance of continuous learning, experimentation, refinement, and adaptation in both technical development and organizational leadership. The artifact connects machine learning iteration to leadership practices such as team development, stakeholder communication, and change management.
+    </p>
+
+    <h3>Objective</h3>
+    <p>
+      To demonstrate how an iterative mindset improves decision-making, innovation, adaptability, and leadership effectiveness in AI/ML contexts.
+    </p>
+
+    <h3>Process</h3>
+    <p>
+      I analyzed the concept of iteration from both a technical and leadership perspective. I examined how machine learning systems improve through repeated cycles of training, evaluation, and adjustment, and then connected that process to leadership practices such as feedback loops, team learning, experimentation, and continuous improvement.
+    </p>
+
+    <h3>Tools and Tech Used</h3>
+    <p>
+      Course materials, reflective analysis, structured writing, leadership concepts, and AI-assisted drafting for organization and clarity.
+    </p>
+
+    <div class="artifact-summary">
+      <h3>Value Proposition of the Artifact</h3>
+      <p>
+        <strong>Unique Value:</strong> This artifact shows that I understand AI/ML leadership as more than technical execution. It demonstrates my ability to connect machine learning practices with organizational learning, change leadership, and long-term improvement.
+      </p>
+      <p>
+        <strong>Relevance:</strong> In modern AI environments, leaders must manage uncertainty, support continuous learning, and guide teams through rapid change. This artifact reflects the mindset needed to lead AI/ML initiatives responsibly and effectively.
+      </p>
+    </div>
+
+    <h3>References</h3>
+    <p>
+      Course materials on iterative learning, AI/ML leadership, and change management.
+    </p>
+  </section>
+
   <section id="reflection">
     <h2>Reflection</h2>
 
     <div class="reflection">
+      <h3>Customization for the Audience</h3>
       <p>
-        For my fourth artifact, I selected a project focused on bias in AI systems because it highlights a different dimension of my AI/ML knowledge—ethical leadership and responsible AI development. While my earlier artifacts demonstrated technical understanding and communication skills, this artifact reflects my ability to critically evaluate how AI systems impact people and society.
+        I designed this portfolio for instructors, recruiters, and technology professionals who want to evaluate both my technical growth and my leadership readiness in AI/ML. To support that audience, I organized each artifact using a consistent structure that explains the purpose, process, tools, and value of the work.
+      </p>
+
+      <h3>Lessons Learned</h3>
+      <p>
+        One of the most important lessons I learned through this portfolio is that AI/ML development is not only about technical accuracy. It also requires communication, ethical awareness, and the ability to connect technical systems to real-world impact. I learned that responsible leadership in AI means thinking about fairness, usability, adaptability, and long-term value.
+      </p>
+
+      <h3>Feedback and Revisions</h3>
+      <p>
+        As I revised the portfolio, I improved the structure of each artifact by making the sections more complete and professional. I strengthened the personal value proposition, clarified the target audience, expanded artifact descriptions, and added a stronger leadership perspective so the portfolio shows not only what I learned, but how I would apply it in practice.
+      </p>
+
+      <h3>Overall Reflection</h3>
+      <p>
+        Overall, this portfolio represents my growth into a more well-rounded technology professional. It shows development in technical understanding, communication, ethical reasoning, and leadership awareness. Together, the artifacts reflect my ability to think critically about AI/ML and present that knowledge in a way that is meaningful to professional audiences.
       </p>
 
       <p>
-        I customized this artifact for a professional audience by shifting from a purely academic explanation to a leadership-focused perspective. Instead of only describing bias, I emphasized how leaders must actively identify and mitigate bias in real-world AI systems. This makes the artifact more relevant to industry expectations and aligns with the purpose of a professional portfolio.
-      </p>
-
-      <p>
-        One key lesson I learned is that AI is not neutral. The quality and fairness of AI systems depend heavily on human decisions, including data selection, labeling, and evaluation. This reinforced the importance of combining technical skills with ethical awareness, especially for leaders who are responsible for guiding teams and implementing AI/ML tools.
-      </p>
-
-      <p>
-        Based on feedback and revision, I improved the artifact by making the structure clearer, strengthening the value proposition, and explicitly connecting the work to leadership responsibilities. I also added more real-world relevance to show how these concepts apply beyond the classroom and how they support responsible innovation.
-      </p>
-
-      <p>
-        Overall, this artifact completes my portfolio by demonstrating not only technical and communication skills but also critical thinking, ethical awareness, and leadership capability in AI/ML. It represents my growth into a more well-rounded and responsible technology professional.
-      </p>
-
-      <p>
-        <strong>AI Disclosure:</strong> I used ChatGPT to help refine structure and clarity, but all ideas, interpretations, and final content reflect my own understanding.
+        <strong>AI Disclosure:</strong> I used ChatGPT to help refine organization, structure, and clarity, but the ideas, interpretations, and final portfolio content reflect my own understanding and academic work.
       </p>
     </div>
   </section>
